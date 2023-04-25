@@ -1,0 +1,1 @@
+0 8 * * * bash /home/cyberoid/Skill02/logwatch.sh
