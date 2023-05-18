@@ -1,0 +1,19 @@
+ - name: My First Playbook 
+   hosts: Bogdanov
+   become: yes
+    
+   tasks:
+   - name: Installing cmatrix
+     ansible.builtin.apt: 
+       name: cmatrix 
+       state: present
+       
+   - name: Installing cowsay
+     ansible.builtin.apt:
+       name: cowsay
+       state: present
+       
+   - name: Installing sl
+     ansible.builtin.apt:
+       name: sl
+       state: present
